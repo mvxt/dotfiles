@@ -1,0 +1,7 @@
+[user]
+	email = meta.orphic@gmail.com
+	name = Michael Thanh
+[core]
+	editor = vi
+[push]
+	default = simple
