@@ -1,0 +1,1 @@
+/home/mikeyvxt/.bash_logout
