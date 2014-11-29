@@ -2,6 +2,6 @@
 	email = meta.orphic@gmail.com
 	name = Michael Thanh
 [core]
-	editor = vi
+	editor = emacs
 [push]
 	default = simple
