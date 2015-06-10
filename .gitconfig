@@ -3,5 +3,6 @@
 	name = Michael Thanh
 [core]
 	editor = emacs
+	compression = 0
 [push]
 	default = simple

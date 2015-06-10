@@ -6,7 +6,7 @@ fi
 
 case "$TERM" in
 xterm*|rxvt*)
-        PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+        PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: $PS1"
 	;;
 *)
 	;;
@@ -17,6 +17,11 @@ if [ "$color_prompt" = yes ]; then
 else
     PS1='\W\$ '
 fi
+
+if [ -f ~/.git-completion.bash ]; then
+    . ~/.git-completion.bash
+fi
+
 unset color_prompt force_color_prompt
 
 if [ -x /usr/bin/dircolors ]; then
@@ -37,7 +42,23 @@ if [ -x /usr/bin/dircolors ]; then
     alias t='tmux'
     alias chrome='chromium-browser'
     alias word='libreoffice --writer'
-    alias eclipse='/opt/eclipse/eclipse'
+    alias restart='sudo shutdown -r now'
+    alias shutdown='sudo shutdown -h now'
+    alias word='libreoffice --writer'
+    alias excel='libreoffice --calc'
+    alias powerpoint='libreoffice --impress'
+    alias android='studio.sh'
+
+    # aliases for github
+    alias add='git add'
+    alias commit='git commit -m'
+    alias push='git push'
+    alias status='git status'
+    alias branch='git branch'
+    alias newbranch='git checkout -b'
+    alias log='git log'
+    alias stash='git stash'
+    alias checkout='git checkout'
 fi
 
 alias ll='ls -alF'
@@ -49,3 +70,6 @@ TERM=xterm-256color
 # User specific aliases and functions
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:/opt/android-studio/bin" # Add Android Studio to path
+export PATH="$PATH:/opt/eclipse" # Add Eclipse IDE to path
+export ANDROID_HOME="/home/webviz/Android/Sdk/" # Add Android Sdk to path
