@@ -7,7 +7,6 @@ ln -s dotfiles/.bashrc .bashrc
 ln -s dotfiles/.dmrc .dmrc
 ln -s dotfiles/.emacs .emacs
 ln -s dotfiles/.emacs.d .emacs.d
-ln -s dotfiles/.emacs.el .emacs.el
 ln -s dotfiles/.gem .gem
 ln -s dotfiles/.gemrc .gemrc
 ln -s dotfiles/.git .git

@@ -59,6 +59,8 @@ if [ -x /usr/bin/dircolors ]; then
     alias log='git log'
     alias stash='git stash'
     alias checkout='git checkout'
+	alias pull='git pull'
+	alias merge='git merge'
 fi
 
 alias ll='ls -alF'
