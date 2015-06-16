@@ -30,6 +30,15 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+fi
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+TERM=xterm-256color
+
+# User specific aliases and functions
     alias open='gnome-open'
     alias logout='gnome-session-quit'
     alias c='cc -o'
@@ -48,7 +57,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias excel='libreoffice --calc'
     alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
-
+	
     # aliases for github
     alias add='git add'
     alias commit='git commit -m'
@@ -61,17 +70,4 @@ if [ -x /usr/bin/dircolors ]; then
     alias checkout='git checkout'
 	alias pull='git pull'
 	alias merge='git merge'
-fi
-
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-TERM=xterm-256color
-
-# User specific aliases and functions
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:/opt/android-studio/bin" # Add Android Studio to path
-export PATH="$PATH:/opt/eclipse" # Add Eclipse IDE to path
-export ANDROID_HOME="/home/webviz/Android/Sdk/" # Add Android Sdk to path
+	
