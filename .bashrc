@@ -32,9 +32,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+    alias ll='ls -alF'
+    alias la='ls -A'
+    alias l='ls -CF'
 
 TERM=xterm-256color
 
@@ -58,7 +58,7 @@ TERM=xterm-256color
     alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
 	
-    # aliases for github
+# aliases for github
     alias add='git add'
     alias commit='git commit -m'
     alias push='git push'
@@ -68,6 +68,9 @@ TERM=xterm-256color
     alias log='git log'
     alias stash='git stash'
     alias checkout='git checkout'
-	alias pull='git pull'
-	alias merge='git merge'
-	
+    alias pull='git pull'
+    alias merge='git merge'
+   	alias remote='git remote'
+	alias clone='git clone'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
