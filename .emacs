@@ -5,6 +5,9 @@
 (global-set-key (kbd "TAB") 'self-insert-command)
 (setq default-tab-width 4)
 
+;; Permanently enable line nums
+(global-linum-mode t)
+
 ;; Remove splash screen
 (setq inhibit-splash-screen t)
 

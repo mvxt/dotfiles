@@ -57,6 +57,8 @@ TERM=xterm-256color
     alias excel='libreoffice --calc'
     alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
+	alias pbcopy='xclip -selection clipboard'
+	alias pbpaste='xclip -selection clipboard -o'
 	
 # aliases for github
     alias add='git add'
