@@ -36,11 +36,10 @@ fi
     alias la='ls -A'
     alias l='ls -CF'
 
-TERM=xterm-256color
+export CLICOLOR=1
+export TERM=xterm-256color
 
 # User specific aliases and functions
-    alias open='gnome-open'
-    alias logout='gnome-session-quit'
     alias c='cc -o'
     alias ed='emacs --daemon'
     alias e='emacsclient -t'

@@ -15,8 +15,8 @@
 (setq-default mode-line-format nil)
 
  ;; Remove messages/fanfare from emacs
- (setq inhibit-startup-message t)
- (setq inhibit-startup-echo-area-message t)
+(setq inhibit-startup-message t)
+(setq inhibit-startup-echo-area-message t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -36,8 +36,8 @@
  )
 
  ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
- (set-frame-parameter (selected-frame) 'alpha '(85 50))
- (add-to-list 'default-frame-alist '(alpha 85 50))
+(set-frame-parameter (selected-frame) 'alpha '(85 50))
+(add-to-list 'default-frame-alist '(alpha 85 50))
 
 ;; assign toggle to C-c t
 (eval-when-compile (require 'cl))
