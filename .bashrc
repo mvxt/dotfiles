@@ -36,11 +36,10 @@ fi
     alias la='ls -A'
     alias l='ls -CF'
 
-TERM=xterm-256color
+export CLICOLOR=1
+export TERM=xterm-256color
 
 # User specific aliases and functions
-    alias open='gnome-open'
-    alias logout='gnome-session-quit'
     alias c='cc -o'
     alias ed='emacs --daemon'
     alias e='emacsclient -t'
@@ -57,6 +56,8 @@ TERM=xterm-256color
     alias excel='libreoffice --calc'
     alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
+	alias pbcopy='xclip -selection clipboard'
+	alias pbpaste='xclip -selection clipboard -o'
 	
 # aliases for github
     alias add='git add'

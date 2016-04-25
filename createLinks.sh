@@ -1,18 +1,9 @@
 #!/bin/bash
 
-cd ~/
-ln -s dotfiles/.bash_logout .bash_logout
-ln -s dotfiles/.bash_profile .bash_profile
-ln -s dotfiles/.bashrc .bashrc
-ln -s dotfiles/.dmrc .dmrc
-ln -s dotfiles/.emacs .emacs
-ln -s dotfiles/.emacs.d .emacs.d
-ln -s dotfiles/.gem .gem
-ln -s dotfiles/.gemrc .gemrc
-ln -s dotfiles/.git .git
-ln -s dotfiles/.git-completion.bash .git-completion.bash
-ln -s dotfiles/.gitconfig .gitconfig
-ln -s dotfiles/.ngrok .ngrok
-ln -s dotfiles/.profile .profile
-ln -s dotfiles/.tmux.conf .tmux.conf
+FILES=$(pwd)/.*
 
+for f in $FILES
+do
+	echo "Creating symbolic link for $f..."
+	ln -s $f ~/$(basename $f)
+done
