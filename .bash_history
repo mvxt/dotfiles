@@ -1,25 +1,3 @@
-emacsclient -t test.txt
-ls
-cat t
-cat test.txt 
-rm test.txt 
-ps aux | grep emacs
-. .bashrc
-ls
-ps aux | grep emacs
-emacsclient -e '(kill-emacs)'
-ps aux | grep emacs
-ed
-history
-. .bashrc
-ps aux | grep emacs
-ek
-. .bashrc
-ek
-ps aux | grep emacs
-ed
-ruby -version
-rvm
 rvm install 2.1.5
 rvm set-default 2.1.5
 ruby -version
@@ -496,5 +474,29 @@ la
 ls
 tmux
 exit
+la
+exit
+ls
+which ruby
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ls
+brew install git
+brew install shiftit
+brew install Caskroom/cask/shiftit
+brew install git
+ls
+git clone https://www.github.com/mvxt/dotfiles
+ls
+cd dotfiles/
+ls
+branch
+git branch
+brew install tmux
+ls
+brew install emacs
+la
+ls
+./createLinks.sh 
+ls
 la
 exit

@@ -48,16 +48,9 @@ export TERM=xterm-256color
     alias preview='rake preview'
     alias deploy='rake deploy'
     alias t='tmux'
-    alias chrome='chromium-browser'
-    alias word='libreoffice --writer'
     alias restart='sudo shutdown -r now'
     alias shutdown='sudo shutdown -h now'
-    alias word='libreoffice --writer'
-    alias excel='libreoffice --calc'
-    alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
-	alias pbcopy='xclip -selection clipboard'
-	alias pbpaste='xclip -selection clipboard -o'
 	
 # aliases for github
     alias add='git add'
@@ -71,7 +64,7 @@ export TERM=xterm-256color
     alias checkout='git checkout'
     alias pull='git pull'
     alias merge='git merge'
-   	alias remote='git remote'
-	alias clone='git clone'
+    alias remote='git remote'
+    alias clone='git clone'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
