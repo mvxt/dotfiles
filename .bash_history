@@ -1,66 +1,3 @@
-rvm install 2.1.5
-rvm set-default 2.1.5
-ruby -version
-ruby --version
-ruby -v
-java -versiosion
-java -version
-rvm list rubies
-rvm gemset list
-cd Documents/MetaOrphic/
-rvm gemset list
-cd
-rvm gemset create api-server
-rvm gemset list
-rvm gemset use api-server
-gem install rails
-which rails
-rails --version
-cat .gemrc 
-git status
-ls
-la
-ll .barhrc
-ll .bashrc
-ls
-cd Documents/
-ls
-cd event_planner/
-ls
-ls
-mkdir client
-mv * client/
-ls
-cd client/
-ls
-cd ..
-ls
-rails new
-rails new server
-ll
-rm -rf server/
-man rails
-rails --help
-rails new server -d postgresql -T --skip-spring --skip-bundle
-ls
-cd server/
-ls
-bundle install
-e Gemfile 
-bundle install
-e Gemfile 
-bundle install
-which psql
-sudo apt-get update
-sudo apt-get install postgresql postgresql-contrib
-sudo -i -u postgres
-psql
-psql -U postgres
-createuser --interactive
-sudo -i -u postgres
-psql -U postgres
-sudo psql -U postgres
-vim /etc/postgresql/9.3/main/pg_hba.conf 
 vi /etc/postgresql/9.3/main/pg_hba.conf 
 sudo vi /etc/postgresql/9.3/main/pg_hba.conf 
 sudo service postgresql restart
@@ -499,4 +436,67 @@ ls
 ./createLinks.sh 
 ls
 la
+exit
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null ; brew install caskroom/cask/brew-cask 2> /dev/null
+brew cask install shiftit
+ls
+brew install emacs
+brew install git
+ls
+git clone https://www.github.com/mvxt/dotfiles
+ls
+ls
+cd dotfiles/
+ls
+git checkout macosx
+ls
+status
+git branch -v
+pull
+git pull
+ls
+emacs -nw createLinks.sh 
+./createLinks.sh 
+cd 
+ls
+ls
+ll
+ls -l
+ls -a
+rm .git
+cd dotfiles/
+ls
+exit
+ls
+ll
+cd dotfiles/
+ls
+cd
+brew install tmux
+ls
+which java
+java -version
+exit
+exit
+java -version
+ls
+ls
+tmux
+ls
+la
+ll
+ls
+cd Documents/
+ls
+cd
+ls
+ls
+ls
+ls
+ls
+ll
+ls
+ls
+ls
+exit
 exit
