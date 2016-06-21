@@ -4,11 +4,12 @@
 ;; Get rid of stupid emacs tab bullshit
 (global-set-key (kbd "TAB") 'self-insert-command)
 (setq default-tab-width 4)
+(setq tab-width 4)
 
 ;; Permanently enable line nums
 (global-linum-mode t)
 
-;; Remove splash screen
+;; Permanently remove splash screen
 (setq inhibit-splash-screen t)
 
 ;; Remove emacs status line
@@ -33,7 +34,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+  )
+
+;; Permanently map forward and previous paragraphs to M-n and M-p
+(global-set-key (kbd "M-n") 'forward-paragraph) ; Alt+n
+(global-set-key (kbd "M-p") 'backward-paragraph) ; Alt+p
 
  ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(85 50))
