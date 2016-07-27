@@ -52,6 +52,7 @@ export TERM=xterm-256color
     alias restart='sudo shutdown -r now'
     alias shutdown='sudo shutdown -h now'
     alias android='studio.sh'
+    alias r='rmtrash'
 	
 # aliases for github
     alias add='git add'
@@ -62,8 +63,10 @@ export TERM=xterm-256color
     alias newbranch='git checkout -b'
     alias log='git log'
     alias stash='git stash'
+    alias pop='git stash pop'
     alias checkout='git checkout'
     alias pull='git pull'
+    alias fetch='git fetch'
     alias merge='git merge'
     alias remote='git remote'
     alias clone='git clone'
@@ -73,7 +76,6 @@ export TERM=xterm-256color
 	export PATH="$PATH:$HOME/Custom_Scripts" # Add Custom_Scripts folder to path
 	export PATH="$PATH:/opt/apache-maven-3.3.9/bin" # Add Maven bin files to path variable
 	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home" # Set JAVA_HOME
-	
 
 # Data Ductus sourcing ncsrc file
 	source $HOME/nso-4.1.2/ncsrc

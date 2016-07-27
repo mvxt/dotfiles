@@ -2,7 +2,7 @@
 (setq make-backup-files nil)
 
 ;; Get rid of stupid emacs tab bullshit
-(global-set-key (kbd "TAB") 'self-insert-command)
+(setq-default indent-tabs-mode nil)
 (setq default-tab-width 4)
 (setq tab-width 4)
 
@@ -28,7 +28,10 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
- '(custom-enabled-themes (quote (manoj-dark))))
+ '(custom-enabled-themes (quote (manoj-dark)))
+ ;; Tab 4 spaces
+ '(tab-stop-list (number-sequence 4 200 4)))
+
  (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -40,7 +43,7 @@
 (global-set-key (kbd "M-n") 'forward-paragraph) ; Alt+n
 (global-set-key (kbd "M-p") 'backward-paragraph) ; Alt+p
 
- ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
+;; (set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(85 50))
 (add-to-list 'default-frame-alist '(alpha 85 50))
 
@@ -60,3 +63,15 @@
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
      (set-frame-parameter (selected-frame) 'alpha value))
+
+;; emacs paste to mac osx clipboard
+;;(defun copy-from-osx ()
+;;  (shell-command-to-string "pbpaste"))
+;;(defun paste-to-osx (text &optional push)
+;;  (let ((process-connection-type nil))
+ ;;   (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+ ;;     (process-send-string proc text)
+ ;;     (process-send-eof proc))))
+
+;;(setq interprogram-cut-function 'paste-to-osx)
+;;(setq interprogram-paste-function 'copy-from-osx)

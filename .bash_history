@@ -1,500 +1,500 @@
-;s
-ls
-cd rebuild/
 ls
 ls
-e rebuild-1-firewall.lux.cli.stdout.log 
-e rebuild-1-firewall.lux.cli.stdout.log 
+cd scripts/
 ls
-e rebuild-1-firewall.lux.
-e rebuild-1-firewall.lux.cli.stdout.log 
+./clear_logs.sh "Blegh"
+cd ..
 ls
-ls
-exit
-ls
-make run
-ncs-netsim stop
-make run
-ls
-ls
-e Makefile 
-ls
-status
-add Makefile 
-add tests/lux/Makefile 
-git diff tests/lux/util/sysconfig.sh
-ls
-ls
-ncs --stop
-cd ncs-cdb/
-ls
-ls
-rm A.cdb 
-rm C.cdb 
-ll
-rm O.cdb 
+cd backup_logs/
 ls
 cd ..
+ls
+cd ..
+ls
+rm xpath.trace 
+cd acl_manager/
+ls
+cd backup_logs/
+ls
+mv Jul-26-16_01\:21_PM/ ../../
+cd ..
+ls
+cd ..
+ls
+cd acl_manager/
+ls
+grep -r "XPath for:" .
+ls
+cd netsim/
+ls
+cd fw-
+cd fw-asa-/
+ls
+cd fw-asa-0/
+ls
+cd logs/
+ll
+cd ..
+ls
+ll
+> xpath.trace
+cd ..
+ls
+> fw-asa-*/xpath.trace
+> fw-asa-1/xpath.trace 
+> fw-asa-2/xpath.trace 
+> fw-asa-3/xpath.trace 
+> fw-asa-4/xpath.trace 
+> fw-asa-5/xpath.trace 
+> fw-asa-6/xpath.trace 
+> fw-asa-6/xpath.trace 
+> fw-asa-7/xpath.trace 
+> fw-asa-8/xpath.trace 
+cd ..
+ls
+cd fw-srx-/
+ls
+cd fw-srx-0/
+ls
+cd logs/
+ls
+cd ..
+cd ..
+ls
+cd .
+cd ..
+ls
+cd ..
+ls
+grep -r "XPath for:" .
+exit
+cd nso-4.1.2
+ls
+cd doc/pdf/
+ls
+open nso_getting_started-4.1.2.pdf 
+open nso_development-4.1.2.pdf 
+ls
+cd ..
+ls
+cd ..
+ls
+cd src
 ls
 ncs
+cd ncs
 ls
-ncs_cli -u admin
+cd build
 ls
-cd ncs-cdb/
-ls
-less netsim_devices_init.xml 
 cd ..
 ls
-ncs_cli -u admin
+ls
+cd ema
+cd emacs/
+ls
+cd yang/
+ls
+cat README 
 exit
-cat tests/lux/util/sysconfig.sh 
-exit
 ls
-cd logs/
-ls
-ls
-exit
-ls
-cd tests/lus
 cd tests/lux/
 ls
-cd util/
+cd yang-relations/
+echo pwd | pbcopy
+echo `pwd` | pbcopy
 ls
-e sysconfig.sh 
+e named-group-relations.lux 
 cd ../../
-ls
-cd ../../
-ls
-cd acl_manager/
-status
-git diff tests/lux/Makefile
-ls
-cd tests/lux/
-ls
-e Makefile 
-cd ../../
-ls
-cd tests/lux/
-ls
-e Makefile 
-cd ../../
-status
-git diff Makefile
-ls
-ls
-e Makefile 
-ls
-cd tests/lux/
-ls
-e Makefile 
-e Makefile 
-ls
-e Makefile 
-ls
-exit
-exit
-exit
-cd tests/lux
-ls
-make env
-ls
-exit
-ls
-cd tests/lux/
-make acl-rebuild1
-exit
-ls
-cd tests/lux
-ls
-cd rebuild/
-ls
-e rebuild-1-firewall.lux 
-exit
-ls
-cd packages/
-ls
-cd ha
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-rm -rf juniper-junos/
-ls
-ls
-rm -rf ncs_prod_backup/
-ls
-ls
-cd packages/
-ls
-cd ..
-ls
-cd packages/
-ls
-cd ha/
-ls
-cd src/
-ls
-ls
-make all
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-cd tra
-cd training/
-ls
-exit
-ls
-cd logs/
-ls
 cd ..
 ls
 cd logs/
 ls
+ncs_cli -u admin
+ls
+mv rollback 10229 temp
+mv rollback10229 temp
+rm rollback*
+mv temp tollback 10229
+mv temp tollback10229
+ll
+cd ..
+ls
+cd backup_logs/
+ls
+rm -r Jul*
 ls
 cd ..
 ls
+cd scripts/
+ls
+./clear_logs.sh "Blegh"
+cd ..
+ls
+make test-yang-relation
+make test-yang-relations
 ncs_cli -u admin
-status
-add tests/lux/util/sysconfig.sh 
-commit 'Makefile fixes'
-push
-pull
-status
-ls
-cd tests/lux/
-ls
-cd ../../
-ls
-ls
-cd netsim/fw-srx-/fw-srx-
-cd netsim/fw-srx-/fw-srx-0/
-s
 ls
 cd logs/
-ls
-ls
-e netconf.trace 
-ls
-cd ../../
-ls
-cd ../../
-ls
-ls
-ncs_cli -u admin
-sh tests/lux/util/sysconfig.sh 
-ls
-ls
-ncs_cli -u admin
-ncs-netsim stop
-ncs --stop
-ncs_cli -u admin
-exit
- erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell
-exit
-ls
-cd 
-ls
-cd Downloads/
-ls
-cd lux/
-ls
-exit
-cd ~/Downloads/
-ls
-cd lux/
-ls
-e include.mk
-exit
-cat tests/lux/util/sysconfig.sh 
-ls
-exit
-cd ~/Downloads/
-ls
-cd lux/
-ls
-less INSTALL.md 
-exit
-ls
-exit
-ls
-cd tests/lux
-ls
-make acl-rebuild1
-exit
-ls
-cd tests/
-ls
-cd lux/
-ls
-ls
-e Makefile 
-ls
-ls
-cd lux_logs/
-ls
-ls
-cd latest_run
-ls
-cd rebuild/
-ls
-ls
-tail -f rebuild-1-firewall.lux.cli.stdout.log 
-ls
-e rebuild-1-firewall.lux.cli.stdout.log 
-e rebuild-1-firewall.lux.cli.stdout.log 
-ls
-e rebuild-1-firewall.lux.cli.stdout.log 
-cd
-ls
-cd Documents/Data_Ductus/
-ls
-cd acl_manager/
-ls
-cd ncs-cdb/
-ls
 ls
 ll
+rm tollback10229 
+ncs_cli -u admin
+s
 ls
 cd ..
 ls
+make test-yang-relations
+make test-yang-relations
+make test-yang-relations
+status
+git diff Makefile
+cd tests/lux/yang-relations/
 ls
+e group-rule-relations.lux 
 ls
-cd ncs-cdb/
-ls
-cd ..
-ls
-ls
-ls
-cd tests/lux
-ls
-cd ..
-cd ..
-ls
-e Makefile 
-cd tests/lux
-ls
-e Makefile 
-ls
-cd lux_logs/latest_run
-ls
-cd rebuild/
-ls
-less rebuild-1-firewall.lux.cli.stdout.log 
-less rebuild-1-firewall.lux.cli.stdout.log 
+rm named-group-relations.lux 
+mv group-rule-relations.lux named-group-relations.lux
+cd ../../
 ls
 cd ..
 ls
-cd ..
+make test-yang-relations
+make test-yang-relations
+ncs_cli -u admin
+make test-yang-relations
+ncs_cli -u admin
+ls
+./ncs.sh 
+ncs_cli -u admin
+ls
+make test-yang-relations
+cd logs/
+ls
+mv rollback10264 temp
+rm rollback*
+mv temp rollback10264
 ls
 cd ..
 ls
-exit
-exit
-e .bashrc
+cd scripts/
+ls
+./clear_logs.sh "Meh"
+cd ..
+ls
+ls
+make test-yang-relations
+make test-yang-relations
+make test-yang-relations
+ls
+status
+git diff tests/lux/Makefile
+git checkout -- tests/lux/Makefile
+git diff tests/lux/yang-relations/named-group-relations.lux
+ls
+status
+git add tests/lux/yang-relations/named-group-relations.lux
+commit 'Added case to lux where changing child with no references to rules, but parent does'
+push
+ls
+status
+cd logs/
+ls
+ll
+mv rollback10307 temp
+rm rollback*
+mv temp rollback10307
+ls
+ll
+ll -h
+man less
+more xpath.trace 
+ls
+less xpath.trace 
+ls
+cd ..
+ls
+cd
 ls
 cd nso-4.1.2
 ls
-e ncsrc
+cd src/ncs/yang/
+ls
+grep "XPath for:" .
+grep -r "XPath for:" .
+ls
+grep -r "XPath" .
+grep -r "READ" .
+grep -r "read" .
+grep -r "read" .
 ls
 cd ..
 ls
-ls
-cd Downloads/
-ls
-ls
-cd lux/
-ls
-e include.mk
-ls
-e INSTALL.md 
-e INSTALL.md 
-exit
-cd
-cd Downloads/
-ls
-cd lux/
-ls
-e include.mk.in 
-which erlc
-ls
-ls
-exit
-ls
-cd tests/lux/
-ls
-cd lux_logs/
-ls
-cd latest_run
-ls
-ls
-cd rebuild/
-ls
-ls
-exit
-ls
-exit
-ls
-exit
-exit
-cd tests/lux
-ls
-make acl-rebuild1
-exit
-ls
-cd tests/lux/
-ls
-ls
-ls
-e Makefile 
-ls
-ls
-make acl-rebuild1
-make acl-rebuild1
-ls
-cd lux_logs/latest_run/
-ls
-cd rebuild/
-ls
-ls
-e rebuild-1-firewall.lux.cli.stdout.log 
-ls
-cd ../../
-ls
-rm -rf run_*
-ls
+grep -r "annotation" .
 cd ..
 ls
 cd ..
 ls
-cd lux/
+grep -r "annotation" .
+cd ..
 ls
-e Makefile 
-cd ../../
+cd nso-4.1.2
+ls
+cd doc/
+ls
+cd pdf/
+ls
+open nso_getting_started-4.1.2.pdf 
+cd ..
+ls
+cd ..
+exit
+cd ~/nso-4.1.2
+ls
+cd src/
+ls
+cd ncs/
+ls
+e ncs_config/tailf-ncs-config.yang 
+e yang/tailf-cli-extensions.yang 
+e yang/tailf-common.yang 
+e yang/tailf-ncs-packages.yang 
+ll
+cd yang
+l
+cd ..
+exit
+ll -h
+ls -l
+exit
+exit
+tail -f logs/ncs-java-vm.log 
+e ncs-java-vm
+e logs/ncs-java-vm.log 
+exit
+cd work
+ls
+cd ..
+ls
+cd work
+ls
+cd Jul-26-16_01\:21_PM/
+ls
+e xpath.trace 
+e test
+cat test | pbcopy
+rm test
+ls
+exit
+ls
+make stop
+./ncs.sh 
+exit
 ls
 cd logs/
-ls
-ls
-tail -f ncs-java-vm.log 
-exit
-cd tests/lux
-ls
-cd lux_logs/latest_run/rebuild/rebuild-1-firewall.lux.
-ls
-cd lux_logs/latest_run/rebuild/
-ls
-ls
-tail -f rebuild-1-firewall.lux.cli.stdout.log 
-ls
-cd ../../
-ls
-cd latest_run
-ls
-ls
-cd rebuild/
-ls
-less rebuild-1-firewall.lux.cli.stdout.log 
-exit
-ncs_cli -u admin
-ls
-ncs_cli -u admin
-which erlc
-ls
-ls
-status
-rm diff.cfg 
-ls
-ls
-ls
-e .gitignore 
-status
-add .gitignore 
-status
-add README.
-add README.md 
-commit 'Latest updates to README & .gitignore'
-push
-ls
-status
-ncs-netsim -help
-ncs-netsim --help
-ncs-netsim is-alive
-ncs_cli -u admin
-ncs_cli -u admin
-ls
-ncs-netsim is-alive
-ncs_cli -u admin
-status
-pull
-ls
-ls
-ls
-status
-e .gitignore 
-status
-add .gitignore
-ls
-status
-ls
-cd packages/
-ls
-cd cisco-asa/src/
+ll
+brew install watch
+watch -n1 `ll -h`
+watch -n 1 `ll -h`
+watch -n 1 ll -h
+watch -n 1 `ls -h`
+man watch
+watch ll -h
+watch -n1 ls
+watch -n1 ls -h
+watch -n1 ll -h
+watch -n1 ls -lh
 ls
 ll
-status
-cd ncsc-out/
 ls
-cd ../../
+la
 ls
-cd ..
-ls
-cd ..
-ls
-ls
-ls
+ll
 exit
 ls
-cd Documents/
+cd ..
 ls
-cd Data_Ductus/
+ls
+cd Jul-26-16_01\:21_PM/
+ls
+wc -l xpath.trace 
+sed -i '1,21000000d' xpath.trace 
+sed -i '1,21000000 d' xpath.trace 
+sed -i '' '1,21000000 d' xpath.trace 
+wc -l xpath.trace 
+ls
+cd ..
 ls
 cd acl_manager/
 ls
-remote -v
+cd logs
+ll
 cd ..
 ls
-git clone https://micthanh@scm.ataductus.se/repos/git/acl_manager acl_manager_2
-git clone https://micthanh@scm.dataductus.se/repos/git/acl_manager acl_manager_2
+make acl
+make acl
 ls
-cd acl_manager_2/
-ls
-cd packages/
-ls
-cd ha/
+make topology
 ls
 ls
-cd src/
-ls
-cd ..
+cd log
+cd logs
+ll
+cd .
 ls
 cd ..
 ls
-cd juniper-junos/
 ls
-cd src/
+cd resources/
+ls
+cd ..
+ls
+cd scripts/
+ls
+./clear_logs.sh "Goddammit
+./clear_logs.sh "Goddammit"
+cd ..
+ls
+s
+ls
+exit
+ls
+cd work/acl_manager/
+t
+t
+exit
+exit
+ls
+exit
+ls
+ls
+cd nso-4.1.2
+ls
+grep -r "Annotation" .
+ls
+cd doc/
+ls
+cd pdf/
+ls
+open nso_development-4.1.2.pdf 
+cd //
+cd
+ls
+cd work
+ls
+cd acl_manager/
+ls
+t
+status
+pull
+log
+ls
+lls
+ls
+status
+ls
+ls
+status
+ncs_cli -u admin
+status
+git checkout -- packages/acl/src/yang/acl.yang
+ls
+ll
+la
+ll
+ls
+cp packages/acl/src/yang/acl.yang ~/
+cd 
+ls
+status
+cd work/acl_manager/
+ls
+status
+stash list
+stash
+branch -a
+git diff packages/acl/src/yang/acl.yang
+ls
+cd logs
+ll
+e ncs-java-vm.log 
+cd
+ls
+rm acl.yang 
+ls
+cat readme.md 
+ls
+rm readme.md 
+ls
+cd nso-4.1.2
+ls
+cd doc/
+ls
+cd pdf/
+ls
+open nso_development-4.1.2.pdf 
+cd ..
+;ls
+cd ..
+ls
+cd examples.ncs/
+ls
+cd getting-started/
+ls
+cd developing-with-ncs/
+ls
+cd 4-rfs-service/
+ls
+e README 
+ed
+e README 
+cd ../../../
+ls
+cd ..
+ls
+cd src/ncs/yang/
+ls
+grep "servicepoint" .
+grep "servicepoint"
+grep "servicepoint" *
+e tailf-ncs-services.yang 
+exit
+ls
+ls
+./ncs.sh 
+ls
+ls
+status
+git diff packages/acl/src/java/src/com/example/acl/AclManager.java
+ls
+status
+git diff packages/acl/src/yang/acl.yang
+man git stash
+ls
+exit
+ls
+cd logs/
+ls
+ll
+cd ..
+ls
+cd scripts/
+ls
+./clear_logs.sh "Blegh"
+cd ..
+ls
+cd backup_logs/
+ls
+rm -r Jul*
+ls
+cd ..
 ls
 ls
 exit
 exit
-exit
-exit
-exit
+t
+cd
+ls
+e .bashrc 
+man cc
+e .bashrc
 exit
