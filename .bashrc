@@ -44,6 +44,7 @@ export TERM=xterm-256color
     alias ed='emacs --daemon'
     alias e='emacsclient -t'
     alias ek="emacsclient -e '(kill-emacs)'"
+	alias se='sudo emacs -nw'
     alias generate='rake generate'
     alias preview='rake preview'
     alias deploy='rake deploy'
@@ -52,12 +53,14 @@ export TERM=xterm-256color
     alias word='libreoffice --writer'
     alias restart='sudo shutdown -r now'
     alias shutdown='sudo shutdown -h now'
+    alias sleep='sudo pm-suspend'
     alias word='libreoffice --writer'
     alias excel='libreoffice --calc'
     alias powerpoint='libreoffice --impress'
     alias android='studio.sh'
 	alias pbcopy='xclip -selection clipboard'
 	alias pbpaste='xclip -selection clipboard -o'
+	alias open='gnome-open'
 	
 # aliases for github
     alias add='git add'
@@ -73,5 +76,6 @@ export TERM=xterm-256color
     alias merge='git merge'
    	alias remote='git remote'
 	alias clone='git clone'
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+	
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
