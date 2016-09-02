@@ -33,6 +33,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
     alias ll='ls -alF'
+    alias lh='ls -alhF'
     alias la='ls -A'
     alias l='ls -CF'
 
@@ -52,6 +53,7 @@ export TERM=xterm-256color
     alias restart='sudo shutdown -r now'
     alias shutdown='sudo shutdown -h now'
     alias android='studio.sh'
+    alias rep='watch -n1'
     alias r='rmtrash'
 	
 # aliases for github
@@ -77,5 +79,6 @@ export TERM=xterm-256color
 	export PATH="$PATH:/opt/apache-maven-3.3.9/bin" # Add Maven bin files to path variable
 	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home" # Set JAVA_HOME
 
-# Data Ductus sourcing ncsrc file
+# Data Ductus sourcing ncsrc file and other stuff
 	source $HOME/nso-4.1.2/ncsrc
+    alias ncscli='ncs_cli -u admin'

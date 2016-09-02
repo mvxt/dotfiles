@@ -1,6 +1,62 @@
 ;; Stop creating backup files
 (setq make-backup-files nil)
 
+;; YANG MODE ====================
+;; (add-to-list 'load-path "~/.emacs.d/")
+;; (autoload 'yang-mode "yang-mode" "Major mode for editing YANG modules."
+;;     t)
+;; (add-to-list 'auto-mode-alist '("\\.yang$" . yang-mode))
+;; (require 'yang-mode nil t)
+
+;; (defun my-yang-mode-hook ()
+;;   "Configuration for YANG Mode. Add this to `yang-mode-hook'."
+;;   (if window-system
+;;       (progn
+;; 	(c-set-style "BSD")
+;; 	(setq indent-tabs-mode nil)
+;; 	(setq c-basic-offset 2)
+;; 	(setq font-lock-maximum-decoration t)
+;; 	(font-lock-mode 3))))
+
+;; (add-hook 'yang-mode-hook 'my-yang-mode-hook)
+;; (setq blink-matching-paren-distance nil)
+
+;; (defun show-onelevel ()
+;;     "show entry and children in outline mode"
+;;     (interactive)
+;;     (show-entry)
+;;     (show-children))
+  
+;; (defun my-outline-bindings ()
+;;     "sets shortcut bindings for outline minor mode"
+;;     (interactive)
+;;     (local-set-key [?\C-,] 'hide-body)
+;;     (local-set-key [?\C-.] 'show-all)
+;;     (local-set-key [C-up] 'outline-previous-visible-heading)
+;;     (local-set-key [C-down] 'outline-next-visible-heading)
+;;     (local-set-key [C-left] 'hide-subtree)
+;;     (local-set-key [C-right] 'show-onelevel)
+;;     (local-set-key [M-up] 'outline-backward-same-level)
+;;     (local-set-key [M-down] 'outline-forward-same-level)
+;;     (local-set-key [M-left] 'hide-subtree)
+;;     (local-set-key [M-right] 'show-subtree))
+  
+;; (add-hook
+;;     'outline-minor-mode-hook
+;;     'my-outline-bindings)
+  
+;; (defconst sort-of-yang-identifier-regexp "[-a-zA-Z0-9_\\.:]*")
+;; (add-hook
+;;     'yang-mode-hook
+;;     '(lambda ()
+;;         (outline-minor-mode)
+;;         (setq outline-regexp
+;;         (concat "^ *" sort-of-yang-identifier-regexp " *"
+;;           sort-of-yang-identifier-regexp
+;;           " *{"))))
+
+;; END YANG MODE ================
+
 ;; Get rid of stupid emacs tab bullshit
 (setq-default indent-tabs-mode nil)
 (setq default-tab-width 4)
@@ -24,10 +80,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["black" "red3" "ForestGreen" "yellow3" "blue" "magenta3" "DeepSkyBlue" "gray50"])
+
+ ;; Always use manoj-dark theme
  '(custom-enabled-themes (quote (manoj-dark)))
  ;; Tab 4 spaces
  '(tab-stop-list (number-sequence 4 200 4)))
