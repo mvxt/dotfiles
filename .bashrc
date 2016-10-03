@@ -55,7 +55,8 @@ export TERM=xterm-256color
     alias android='studio.sh'
     alias rep='watch -n1'
     alias r='rmtrash'
-	
+	alias py='python3'
+    
 # aliases for github
     alias add='git add'
     alias commit='git commit -m'
@@ -80,5 +81,5 @@ export TERM=xterm-256color
 	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home" # Set JAVA_HOME
 
 # Data Ductus sourcing ncsrc file and other stuff
-	source $HOME/nso-4.1.2/ncsrc
+	source $HOME/nso-4.2.1/ncsrc
     alias ncscli='ncs_cli -u admin'

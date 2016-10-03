@@ -59,6 +59,7 @@
 
 ;; Get rid of stupid emacs tab bullshit
 (setq-default indent-tabs-mode nil)
+(setq indent-tabs-mode nil)
 (setq default-tab-width 4)
 (setq tab-width 4)
 
