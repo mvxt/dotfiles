@@ -13,14 +13,13 @@
     alias generate='rake generate'
     alias preview='rake preview'
     alias deploy='rake deploy'
-    alias t='tmux'
     alias restart='sudo shutdown -r now'
     alias shutdown='sudo shutdown -h now'
     alias android='studio.sh'
     alias rep='watch -n1'
     alias r='rmtrash'
-	alias py='python3'
-    
+    alias py='python3'
+
 # aliases for github
     alias add='git add'
     alias commit='git commit -m'

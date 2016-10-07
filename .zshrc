@@ -54,14 +54,14 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git emacs tmux)
+plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # Aliases
-source $ZSH/aliases.sh
+source ~/dotfiles/aliases.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -89,3 +89,13 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Adding custom scripts to path
+	export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+	export PATH="$PATH:$HOME/Custom_Scripts" # Add Custom_Scripts folder to path
+	export PATH="$PATH:/opt/apache-maven-3.3.9/bin" # Add Maven bin files to path variable
+	export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home" # Set JAVA_HOME
+
+# Data Ductus sourcing ncsrc file and other stuff
+	source $HOME/nso-4.2.1/ncsrc
+    alias ncscli='ncs_cli -u admin'
