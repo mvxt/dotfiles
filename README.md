@@ -5,9 +5,11 @@ My working configuration of files. As of right now, the best configuration will 
 
 TODOs:
 - Modify script to insert line "source ~/dotfiles/$FILE" at the beginning of relevant files
+  * .profile
   * .bashrc
   * .zshrc
   * .tmux.conf
+- Fortify script to safely create softlinks to dotfiles directory
 - Assuming brand new machines/brand new setup, will completely wipe above files and simply replace with source statement
 - For separate branches (Linux / Mac OS X) have a separate script that will install all of the required software to setup a brand new computer
   * oh-my-zsh
@@ -18,4 +20,3 @@ TODOs:
   * go
   * rvm/ruby
   * nodejs
--

@@ -41,12 +41,12 @@ brew upgrade
 echo "gem: --no-document" >> ~/.gemrc
 curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
 
-# Install ruby 2.3.1
-rvm install 2.3.1
+# Install latest default ruby
+rvm get stable
+rvm use ruby --install --default
 
 # Install all packages listed above in $PACKAGES
 brew install $PACKAGES
 
 # Install .oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
