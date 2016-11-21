@@ -78,4 +78,9 @@ export TERM=xterm-256color
 	alias clone='git clone'
 	
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+    export PATH="/usr/local/heroku/bin:$PATH"
+    export PATH="~/.npm-global/bin:$PATH"
+    
+
+### Weird GTK bug?
+	export NO_AT_BRIDGE=1
