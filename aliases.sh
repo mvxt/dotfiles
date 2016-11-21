@@ -19,6 +19,7 @@
     alias rep='watch -n1'
     alias r='rmtrash'
     alias py='python3'
+    alias f='e `fzf -i`'
 
 # aliases for github
     alias add='git add'

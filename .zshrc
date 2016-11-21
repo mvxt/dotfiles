@@ -5,7 +5,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Support 256 color schemes
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
