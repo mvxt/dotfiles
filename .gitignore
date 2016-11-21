@@ -1,0 +1,9 @@
+### No need to store history between machines
+*history
+auto-save-list
+
+### Other files
+logs
+
+### MAC OS X Files
+.DS_STORE
