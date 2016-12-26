@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES=git node emacs tmux
+PACKAGES=git node emacs tmux markdown
 
 ###############################
 #####   COPIED SECTION   ######
