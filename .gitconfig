@@ -1,6 +1,7 @@
 [user]
 	email = michael.thanh@dataductus.com
 	name = Michael Thanh
+	signingkey = 5AF2AE437E53437D
 [core]
 	editor = emacs
 	compression = 0

@@ -20,6 +20,7 @@
     alias r='rmtrash'
     alias py='python3'
     alias f='e `fzf -i`'
+    alias diff='diff -byW $(( $(tput cols) - 2 ))'
 
 # aliases for github
     alias add='git add'
@@ -28,7 +29,7 @@
     alias status='git status'
     alias branch='git branch'
     alias newbranch='git checkout -b'
-    alias log='git log'
+    alias log='git log --graph'
     alias stash='git stash'
     alias pop='git stash pop'
     alias checkout='git checkout'
@@ -37,3 +38,5 @@
     alias merge='git merge'
     alias remote='git remote'
     alias clone='git clone'
+    alias gmv='git mv'
+    alias grm='git rm --cached'

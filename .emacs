@@ -16,9 +16,15 @@
 ;;;;;;;; Enable lux-mode for .lux files
 (require 'lux-mode)
 
+;;;;;;;; Enable tag highlighting for XML
+(require 'hl-tags-mode)
+(add-hook 'sgml-mode-hook (lambda () (hl-tags-mode 1)))
+(add-hook 'nxml-mode-hook (lambda () (hl-tags-mode 1)))
+
 ;;;;;;;; Highlight whitespaces in buffers, delete trailing whitespaces on save
 (require 'whitespace)
-(setq-default whitespace-style '(face trailing lines empty indentation::space))
+(setq-default whitespace-style '(tabs face trailing lines tab-mark empty indentation::space))
+(setq whitespace-line-column 300)
 (global-whitespace-mode 1)
 (whitespace-mode 1)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
