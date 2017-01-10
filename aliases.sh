@@ -21,6 +21,8 @@
     alias py='python3'
     alias f='e `fzf -i`'
     alias diff='diff -byW $(( $(tput cols) - 2 ))'
+    alias vssh='vagrant ssh'
+    alias vscp='vagrant scp'
 
 # aliases for github
     alias add='git add'

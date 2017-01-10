@@ -10,6 +10,33 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/helm")
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
 
+;;;;;;;; Enable mouse support
+(unless window-system
+  (require 'mouse)
+  (xterm-mouse-mode t)
+  (global-set-key [mouse-4] (lambda ()
+                              (interactive)
+                              (scroll-down 5)))
+  (global-set-key [mouse-5] (lambda ()
+                              (interactive)
+                              (scroll-up 5)))
+  (defun track-mouse (e))
+  (setq mouse-sel-mode t)
+)
+
+;;;;;;;; Enable copy/paste to OS X clipboard
+(defun copy-from-osx ()
+  (shell-command-to-string "pbpaste"))
+
+(defun paste-to-osx (text &optional push)
+  (let ((process-connection-type nil))
+    (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
+      (process-send-string proc text)
+      (process-send-eof proc))))
+
+(setq interprogram-cut-function 'paste-to-osx)
+(setq interprogram-paste-function 'copy-from-osx)
+
 ;;;;;;;; Enable yang-mode for .yang files
 (require 'yang-mode)
 
