@@ -7,3 +7,8 @@ logs
 
 ### MAC OS X Files
 .DS_STORE
+
+### Other repos
+.emacs.d/plugins/helm
+.emacs.d/plugins/yasnippet
+.emacs.d/plugins/async

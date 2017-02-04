@@ -20,6 +20,7 @@
     alias r='rmtrash'
     alias py='python3'
     alias f='e `fzf -i`'
+    alias open='xdg-open'
 
 # aliases for github
     alias add='git add'

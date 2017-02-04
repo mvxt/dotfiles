@@ -10,12 +10,6 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/helm")
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
 
-;;;;;;;; Enable yang-mode for .yang files
-(require 'yang-mode)
-
-;;;;;;;; Enable lux-mode for .lux files
-(require 'lux-mode)
-
 ;;;;;;;; Highlight whitespaces in buffers, delete trailing whitespaces on save
 (require 'whitespace)
 (setq-default whitespace-style '(face trailing lines empty indentation::space))
@@ -99,10 +93,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (manoj-dark)))
- '(package-selected-packages (quote (markdown-mode)))
- '(safe-local-variable-values (quote ((yas-indent-line quote auto))))
- '(tab-stop-list (number-sequence 4 200 4)))
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(custom-enabled-themes (quote (manoj-dark))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -118,20 +111,3 @@
 ;;;; (set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(85 50))
 (add-to-list 'default-frame-alist '(alpha 85 50))
-
-;;;; assign toggle to C-c t
-(eval-when-compile (require 'cl))
-(defun toggle-transparency ()
-  (interactive)
-  (if (/=
-       (cadr (frame-parameter nil 'alpha))
-       100)
-      (set-frame-parameter nil 'alpha '(100 100))
-    (set-frame-parameter nil 'alpha '(85 50))))
- (global-set-key (kbd "C-c t") 'toggle-transparency)
-
-;;;; Set transparency of emacs
-(defun transparency (value)
-  "Sets the transparency of the frame window. 0=transparent/100=opaque"
-  (interactive "nTransparency Value 0 - 100 opaque:")
-     (set-frame-parameter (selected-frame) 'alpha value))
