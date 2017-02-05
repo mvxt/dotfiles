@@ -111,3 +111,26 @@
 ;;;; (set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
 (set-frame-parameter (selected-frame) 'alpha '(85 50))
 (add-to-list 'default-frame-alist '(alpha 85 50))
+
+;;;; Mouse mode
+(require 'mouse)
+(xterm-mouse-mode t)
+(defun track-mouse (e))
+(setq mouse-sel-mode t)
+
+(load "/usr/share/emacs/24.5/lisp/mwheel.elc")
+(mouse-wheel-mode t)
+
+;;;; Copy/Paste straight from/to system clipboard
+(setq x-select-enable-clipboard t)
+(defun xsel-cut-function (text &optional push)
+  (with-temp-buffer
+    (insert text)
+    (call-process-region (point-min) (point-max) "xsel" nil 0 nil "--clipboard" "--input")))
+(defun xsel-paste-function()
+
+  (let ((xsel-output (shell-command-to-string "xsel --clipboard --output")))
+    (unless (string= (car kill-ring) xsel-output)
+      xsel-output )))
+(setq interprogram-cut-function 'xsel-cut-function)
+(setq interprogram-paste-function 'xsel-paste-function))))
