@@ -3,16 +3,23 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-
+(version)
 ;;;;;;;; Add user plugins folder
 (add-to-list 'load-path "~/.emacs.d/plugins/")
 (add-to-list 'load-path "~/.emacs.d/plugins/async")
 (add-to-list 'load-path "~/.emacs.d/plugins/helm")
 (add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
 
+;;;;;;;; Enable MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
 ;;;;;;;; Highlight whitespaces in buffers, delete trailing whitespaces on save
 (require 'whitespace)
 (setq-default whitespace-style '(face trailing lines empty indentation::space))
+(setq whitespace-line-column 300)
 (global-whitespace-mode 1)
 (whitespace-mode 1)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -95,7 +102,8 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (tango-dark))))
+ '(custom-enabled-themes (quote (tango-dark)))
+ '(package-selected-packages (quote (go-mode rust-mode markdown-mode))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -114,11 +122,10 @@
 
 ;;;; Mouse mode
 (require 'mouse)
+(require 'mwheel)
 (xterm-mouse-mode t)
 (defun track-mouse (e))
 (setq mouse-sel-mode t)
-
-(load "/usr/share/emacs/24.5/lisp/mwheel.elc")
 (mouse-wheel-mode t)
 
 ;;;; Copy/Paste straight from/to system clipboard
@@ -133,4 +140,13 @@
     (unless (string= (car kill-ring) xsel-output)
       xsel-output )))
 (setq interprogram-cut-function 'xsel-cut-function)
-(setq interprogram-paste-function 'xsel-paste-function))))
+(setq interprogram-paste-function 'xsel-paste-function)
+
+;;;; Go mode hook
+(add-hook 'go-mode-hook
+  (lambda ()
+    (add-hook 'before-save-hook 'gofmt-before-save)
+    (setq tab-width 4)
+    (setq indent-tabs-mode 1)
+  )
+)

@@ -4,6 +4,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Go workspace
+export GOPATH=$HOME/workspace/go
+
+# Add bins to path
+export PATH=$PATH:$GOPATH/bin:$HOME/bin
+
 # Support 256 color schemes
 export TERM=xterm-256color
 
